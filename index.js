@@ -96,7 +96,7 @@ function updateGame() {
     drawPoops();
     checkCollisions();
 
-    if (Math.random() < 0.02) {
+    if (Math.random() < 0.006) {
         spawnPoop();
     }
 
