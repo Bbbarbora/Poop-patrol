@@ -108,4 +108,14 @@ function updateGame() {
     }
 }
 
+const directions = ["up", "down", "left", "right"];
+directions.forEach(dir => {
+    document.getElementById(dir).addEventListener("touchstart", () => {
+        keys[`Arrow${dir.charAt(0).toUpperCase() + dir.slice(1)}`] = true;
+    });
+    document.getElementById(dir).addEventListener("touchend", () => {
+        keys[`Arrow${dir.charAt(0).toUpperCase() + dir.slice(1)}`] = false;
+    });
+});
+
 updateGame();
