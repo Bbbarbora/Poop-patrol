@@ -118,4 +118,12 @@ directions.forEach(dir => {
     });
 });
 
+const buttons = document.querySelectorAll("#mobileControls button");
+
+buttons.forEach(button => {
+    button.addEventListener("touchstart", e => {
+        e.preventDefault(); // zabrání scrollovaniu / zoomu
+    }, { passive: false });
+});
+
 updateGame();

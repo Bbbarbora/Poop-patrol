@@ -4,6 +4,8 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    touch-action: manipulation; /* zlepší odozvu na dotyk a zabráni zoomu */
+    
   }
   
   canvas {
